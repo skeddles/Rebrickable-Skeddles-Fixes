@@ -3,3 +3,7 @@
   display: flex; }
   #topNav .container .max-width-300 {
     max-width: none !important; }
+  #topNav .container form.search-global .input-group.search-group {
+    display: flex; }
+    #topNav .container form.search-global .input-group.search-group .search-dropdown, #topNav .container form.search-global .input-group.search-group input {
+      width: auto; }

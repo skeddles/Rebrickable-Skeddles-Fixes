@@ -2,9 +2,22 @@
 	.container {
 		width: 100%;
 		display: flex;
-		
+
 		.max-width-300 {
 			max-width: none !important;
+		}
+
+		form.search-global {
+
+			.input-group.search-group {
+				display: flex;
+				
+				
+				.search-dropdown, input{
+					width: auto;
+				}
+				
+			}
 		}
 	}
 }
