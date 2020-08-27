@@ -1,2 +1,5 @@
 #topNav .container {
-  width: 100%; }
+  width: 100%;
+  display: flex; }
+  #topNav .container .max-width-300 {
+    max-width: none !important; }
