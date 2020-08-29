@@ -12,6 +12,9 @@
 			.input-group.search-group {
 				display: flex;
 				
+				.autosuggest {
+					flex-grow: 1;
+				}
 				
 				.search-dropdown, input{
 					width: auto;
