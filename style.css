@@ -5,5 +5,7 @@
     max-width: none !important; }
   #topNav .container form.search-global .input-group.search-group {
     display: flex; }
+    #topNav .container form.search-global .input-group.search-group .autosuggest {
+      flex-grow: 1; }
     #topNav .container form.search-global .input-group.search-group .search-dropdown, #topNav .container form.search-global .input-group.search-group input {
       width: auto; }
