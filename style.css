@@ -10,4 +10,39 @@
     #topNav .container form.search-global .input-group.search-group .search-group, #topNav .container form.search-global .input-group.search-group input {
       width: 100%; }
     #topNav .container form.search-global .input-group.search-group .search-dropdown {
-      width: 160px; }
+      width: 160px;
+      overflow: hidden; }
+      #topNav .container form.search-global .input-group.search-group .search-dropdown option {
+        padding: 0.75em; }
+
+#part_popup_modal .col-md-3, #part_popup_modal .col-md-8 {
+  width: 100%; }
+#part_popup_modal .select2-container {
+  display: none; }
+#part_popup_modal .skeddles-dropdown-container {
+  margin: 0.5em 0.5em 0.5em 0;
+  display: flex;
+  flex-wrap: wrap; }
+  #part_popup_modal .skeddles-dropdown-container input[type=radio] {
+    position: absolute;
+    visibility: hidden;
+    display: none; }
+  #part_popup_modal .skeddles-dropdown-container label {
+    color: #666666;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px 20px;
+    flex-grow: 1;
+    user-select: none; }
+  #part_popup_modal .skeddles-dropdown-container input[type=radio]:checked + label {
+    background: #cccccc; }
+  #part_popup_modal .skeddles-dropdown-container label {
+    border: solid 2px #cccccc;
+    margin: -1px; }
+  #part_popup_modal .skeddles-dropdown-container .radio-group {
+    border: solid 2px #675f6b;
+    display: inline-block;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden; }

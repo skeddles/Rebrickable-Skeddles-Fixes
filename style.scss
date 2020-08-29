@@ -23,8 +23,71 @@
 				
 				.search-dropdown {
 					width: 160px;
+					overflow: hidden;
+
+					option {
+						padding: 0.75em;
+					}
 				}
 			}
+		}
+	}
+}
+
+$bg: #332f35;
+$fg: lighten($bg,20%);
+$ddcolor: #cccccc;
+$borderWidth: 2px;
+
+#part_popup_modal {
+
+	.col-md-3, .col-md-8 {
+		width: 100%;
+	}
+
+	//rebrickable dropdowns
+	.select2-container {
+		display: none;
+	}
+
+	//custom injected multiselect
+	.skeddles-dropdown-container {
+		margin: 0.5em 0.5em 0.5em 0;
+		display: flex; 
+		flex-wrap: wrap;
+		
+		input[type=radio] {
+			position: absolute;
+			visibility: hidden;
+			display: none;
+		}
+
+		label {
+			color: darken($ddcolor,40%);
+			display: inline-block;
+			cursor: pointer;
+			font-weight: bold;
+			padding: 5px 20px;
+			flex-grow:1;
+			user-select: none;
+		}
+
+		input[type=radio]:checked+label {
+			//color: white;
+			background: $ddcolor;
+		}
+
+		label {
+			border: solid 2px $ddcolor;
+			margin: -1px;
+		}
+
+		.radio-group {
+			border: solid $borderWidth $fg;
+			display: inline-block;
+			margin: 20px;
+			border-radius: 10px;
+			overflow: hidden;
 		}
 	}
 }
