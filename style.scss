@@ -17,10 +17,13 @@
 					flex-grow: 1;
 				} 
 				
-				.search-dropdown, input{
-					width: auto;
+				.search-group, input{
+					width: 100%;
 				}
 				
+				.search-dropdown {
+					width: 160px;
+				}
 			}
 		}
 	}
